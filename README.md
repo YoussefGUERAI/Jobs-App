@@ -1,4 +1,4 @@
-# tp5
+# TP5
 
 ## Project setup
 ```
