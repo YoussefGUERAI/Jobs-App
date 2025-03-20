@@ -27,7 +27,7 @@ nav {
 }
 
 nav a {
-  text-decoration: none;
+  
   color: #007bff;
   font-weight: bold;
 }

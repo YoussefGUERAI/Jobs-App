@@ -1,14 +1,20 @@
 
 <template>
     <div>
-        <h1> Job Listings </h1>
-        <router-link to="/add"><button>Add Job</button></router-link>
-        <ul> 
-            <li v-for="job in jobs" :key="job.id">
-                <router-link :to="'/jobs' + job.id">
-                    {{job.titre }} - {{ job.salaire }}</router-link>
-            </li>
-        </ul>
+        <h1> Job Offers List </h1>
+        
+        
+            <div v-for="job in jobs" :key="job.id" class="job-offer">
+                <router-link :to="`/jobs/${job.id}`">
+                    <button>{{job.titre }} - {{ job.salaire }}   MAD/an  
+                    <router-link :to="'/jobs/edit' + job.id">
+                    To modify this job
+                    </router-link>
+                </button>
+                     </router-link>
+                    
+                    </div>
+        
     </div>
 </template>
 
@@ -44,4 +50,20 @@
 
 <style scoped>
 
+.job-offer{
+    font-weight: bold;
+    margin: 10px;
+
+}
+.job-offer button{
+    padding: 20px;
+    width: 80%;
+    margin-left: 120px;
+}
+h1{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+
+
+}
 </style>

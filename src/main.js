@@ -11,7 +11,7 @@ const routes = [
     { path: '/', component : Home},
     {path: '/add',component: AddJob},
     {path: '/jobs/:id', component: JobDetail , props:true},
-    {path: '/jobs/:id', component:EditJob , props:true}
+    {path: '/jobs/edit/:id', component:EditJob , props:true}
 
 ];
 const router = createRouter({
