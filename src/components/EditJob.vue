@@ -2,9 +2,9 @@
     <div>
       <h2>Edit Job</h2>
       <form @submit.prevent="editJob">
-        <input v-model="job.title" required />
+        <input v-model="job.titre" required />
         <input v-model="job.description" required />
-        <input v-model="job.salary" required />
+        <input v-model="job.salaire" required />
         <button type="submit">Update Job</button>
       </form>
     </div>
@@ -41,7 +41,19 @@
         } catch (error) {
           console.error("Error updating job:", error);
         }
+      },
+      async deleteJob() {
+      try {
+        const response = await fetch(`http://localhost:3000/jobs/${this.id}`, {
+          method: 'DELETE'
+        });
+        if (!response.ok) throw new Error(`HTTP error! Status: ${response.status}`);
+        this.$router.push('/');
+      } catch (error) {
+        console.error("Error deleting job:", error);
       }
+    }
+
     }
   };
   </script>

@@ -4,7 +4,7 @@
       "id": "1",
       "titre": "Développeur Web",
       "description": "Responsable de la création et de la maintenance de sites web modernes et responsives.",
-      "salaire": "35 000 ",
+      "salaire": "40 000 ",
       "dateCreation": "2025-03-17"
     },
     {
@@ -75,6 +75,18 @@
       "titre": "Ressource humaine",
       "description": "HHH",
       "salaire": "1000 "
+    },
+    {
+      "id": "1a4e",
+      "titre": "Associate Director of Disability Services",
+      "description": "includes responsibilities such as overseeing the daily operations of the disability services office, supervising staff, and ensuring compliance with relevant laws and regulations",
+      "salaire": "75000"
+    },
+    {
+      "id": "db31",
+      "titre": "ayman",
+      "description": "nade ",
+      "salaire": "1000"
     }
   ]
 }

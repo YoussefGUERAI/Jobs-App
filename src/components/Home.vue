@@ -7,7 +7,7 @@
             <div v-for="job in jobs" :key="job.id" class="job-offer">
                 <router-link :to="`/jobs/${job.id}`">
                     <button>{{job.titre }} - {{ job.salaire }}   MAD/an  
-                    <router-link :to="'/jobs/edit' + job.id">
+                    <router-link :to="'/jobs/edit/' + job.id">
                     To modify this job
                     </router-link>
                 </button>

@@ -2,9 +2,9 @@
     <div>
         <h2>Add a New Job</h2>
         <form @submit.prevent="addJob">
-      <input v-model="job.title" placeholder="Job Title" required />
+      <input v-model="job.titre" placeholder="Job Title" required />
       <input v-model="job.description" placeholder="Description" required />
-      <input v-model="job.salary" placeholder="Salary" required />
+      <input v-model="job.salaire" placeholder="Salary" required />
       <button type="submit">Add Job</button>
     </form>
     </div>
